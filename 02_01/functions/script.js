@@ -1,13 +1,13 @@
 var calc = {
-  status: 'Awesome',
-  plus: function (a,b) {
+  status: "A great javascript object.",
+  plus: function(a, b){
     return (
-      console.log(this),
       console.log(a+b),
+      console.log(this),
       console.log(arguments),
       console.log(this.status)
-    )
+    );
   }
 }
 
-calc.plus(2,2);
+calc.plus(4,9);
