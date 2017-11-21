@@ -1,24 +1,26 @@
-var speak = function(saywhat) {
-  console.log(saywhat);
-}
+var speak = function(say){
+  console.log(say);
+};
 
-var Dog = function() {
+var Dog = function(){
   var name, breed;
-}
+};
 
-var Cat = function() {
+var Cat = function(){
   var name, breed;
 }
 
 Dog.prototype.speak = speak;
 Cat.prototype.speak = speak;
 
-firstDog = new Dog;
-firstDog.name = "Rover";
-firstDog.breed = "Doberman";
-firstDog.speak('woof');
+var jack = new Dog;
+var cat1 = new Cat;
 
-firstCat = new Cat;
-firstCat.name = "Sniggles";
-firstCat.breed = "Manx";
-firstCat.speak('meow');
+jack.name = "Jack";
+jack.breed = "German Shepherred";
+jack.speak = "Woof!";
+
+cat1.name = "james";
+cat1.breed = "Maux";
+cat1.speak = "Meow";
+
